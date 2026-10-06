@@ -1,0 +1,43 @@
+\begin{table}[H]
+\centering
+\caption{Benchmark summary on the $54$ random instances.}
+\label{tab:profiles}
+\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Method & solved & best & median calls & geo.\ mean calls\\
+\midrule
+\multicolumn{5}{l}{\emph{Impedance}}\\
+\quad Alg.~1 ($\beta=0$) & 100\% & 61\% & 1{,}098 & 1{,}310\\
+\quad Alg.~1 ($\beta=0.1$) & 100\% & 0\% & 1{,}350 & 1{,}615\\
+\quad $\Phi$-AdGD (MM20) & 100\% & 0\% & 1{,}177 & 1{,}423\\
+\quad $\Phi$-AdGD-2 (MM24) & 100\% & 39\% & 1{,}082 & 1{,}312\\
+\quad $\Phi$-GD-Armijo & 100\% & 0\% & 5{,}077 & 6{,}136\\
+\quad Euclidean GD-Armijo & 17\% & 0\% & 29{,}763 & 32{,}205\\
+\midrule
+\multicolumn{5}{l}{\emph{Power control}}\\
+\quad Alg.~1 ($\beta=0$) & 94\% & 6\% & 2{,}798 & 2{,}380\\
+\quad Alg.~1 ($\beta=0.1$) & 94\% & 0\% & 3{,}344 & 2{,}871\\
+\quad $\Phi$-AdGD (MM20) & 94\% & 6\% & 2{,}829 & 2{,}495\\
+\quad $\Phi$-AdGD-2 (MM24) & 94\% & 83\% & 2{,}623 & 2{,}317\\
+\quad $\Phi$-GD-Armijo & 89\% & 0\% & 12{,}198 & 10{,}293\\
+\quad Euclidean GD-Armijo & 11\% & 0\% & 40{,}349 & 40{,}346\\
+\midrule
+\multicolumn{5}{l}{\emph{Bradley--Terry}}\\
+\quad Alg.~1 ($\beta=0$) & 100\% & 0\% & 74 & 73\\
+\quad Alg.~1 ($\beta=0.1$) & 100\% & 0\% & 91 & 85\\
+\quad $\Phi$-AdGD (MM20) & 100\% & 100\% & 62 & 60\\
+\quad $\Phi$-AdGD-2 (MM24) & 100\% & 0\% & 78 & 77\\
+\quad $\Phi$-GD-Armijo & 100\% & 0\% & 243 & 235\\
+\quad Euclidean GD-Armijo & 6\% & 0\% & 25{,}187 & 25{,}187\\
+\midrule
+\multicolumn{5}{l}{\emph{All 54 instances}}\\
+\quad Alg.~1 ($\beta=0$) & 98\% & 22\% & 763 & 595\\
+\quad Alg.~1 ($\beta=0.1$) & 98\% & 0\% & 933 & 716\\
+\quad $\Phi$-AdGD (MM20) & 98\% & 35\% & 788 & 581\\
+\quad $\Phi$-AdGD-2 (MM24) & 98\% & 41\% & 757 & 600\\
+\quad $\Phi$-GD-Armijo & 96\% & 0\% & 3{,}105 & 2{,}325\\
+\quad Euclidean GD-Armijo & 11\% & 0\% & 34{,}798 & 33{,}324\\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,36 @@
+\begin{table}[H]
+\centering
+\caption{Results on the three applications.}
+\label{tab:main}
+\small
+\begin{tabular}{@{}lrrrrc@{}}
+\toprule
+Method & Iter. & $f$-evals & CPU [s] & final rel.\ gap & solved\\
+\midrule
+\multicolumn{6}{l}{\emph{Impedance matching ($N=64$, $m=63$)}}\\
+\quad Alg.~1 ($\beta=0$) & 2{,}060 & -- & 0.03 & 9.9e-09 & \checkmark\\
+\quad Alg.~1 ($\beta=0.1$) & 2{,}504 & -- & 0.04 & 1.0e-08 & \checkmark\\
+\quad $\Phi$-AdGD (MM20) & 2{,}215 & -- & 0.03 & 1.0e-08 & \checkmark\\
+\quad $\Phi$-AdGD-2 (MM24) & 2{,}013 & -- & 0.03 & 1.0e-08 & \checkmark\\
+\quad $\Phi$-GD-Armijo & 3{,}169 & 6{,}318 & 0.14 & 1.0e-08 & \checkmark\\
+\quad Euclidean GD-Armijo & 16{,}679 & 33{,}321 & 0.29 & 1.6e-03 & $\times$\\
+\midrule
+\multicolumn{6}{l}{\emph{Power control ($K=m=40$)}}\\
+\quad Alg.~1 ($\beta=0$) & 18{,}246 & -- & 0.13 & 1.0e-08 & \checkmark\\
+\quad Alg.~1 ($\beta=0.1$) & 22{,}181 & -- & 0.14 & 1.0e-08 & \checkmark\\
+\quad $\Phi$-AdGD (MM20) & 19{,}527 & -- & 0.10 & 1.0e-08 & \checkmark\\
+\quad $\Phi$-AdGD-2 (MM24) & 17{,}620 & -- & 0.09 & 1.0e-08 & \checkmark\\
+\quad $\Phi$-GD-Armijo & 16{,}674 & 33{,}326 & 0.26 & 4.1e-06 & $\times$\\
+\quad Euclidean GD-Armijo & 16{,}669 & 33{,}331 & 0.15 & 1.5e+00 & $\times$\\
+\midrule
+\multicolumn{6}{l}{\emph{Bradley--Terry ranking ($m=200$)}}\\
+\quad Alg.~1 ($\beta=0$) & 77 & -- & 0.01 & 6.5e-09 & \checkmark\\
+\quad Alg.~1 ($\beta=0.1$) & 90 & -- & 0.01 & 9.1e-09 & \checkmark\\
+\quad $\Phi$-AdGD (MM20) & 67 & -- & 0.01 & 1.0e-08 & \checkmark\\
+\quad $\Phi$-AdGD-2 (MM24) & 79 & -- & 0.01 & 9.4e-09 & \checkmark\\
+\quad $\Phi$-GD-Armijo & 85 & 151 & 0.07 & 9.3e-09 & \checkmark\\
+\quad Euclidean GD-Armijo & 17{,}076 & 32{,}924 & 14.41 & 3.7e-01 & $\times$\\
+\quad MM (Zermelo--Hunter) & 170 & -- & 0.02 & 9.4e-09 & \checkmark\\
+\bottomrule
+\end{tabular}
+\end{table}
